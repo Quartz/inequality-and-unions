@@ -1,0 +1,51 @@
+@import 'qz/chart-elements'
+
+#annotation-background
+	fill: $qz-background-gray
+
+#annotation
+	font-family: $qz-sans-light
+	fill: $qz-gray-2
+
+.dot
+	fill $qz-purp-3
+
+.fit-line
+	fill none
+	stroke-width 2px
+	stroke $qz-gray-1
+	stroke-linecap round
+	stroke-linejoin round
+
+.arrows path
+	stroke-width: 1.5px
+	stroke: $qz-body-black
+	fill: none
+
+.labels text
+	fill: $qz-body-black
+	font-family: $qz-sans-bold
+	-webkit-font-smoothing: antialiased
+	font-size: 14px
+
+#x-label
+	fill: $qz-gray-2
+	font-family $qz-sans-light
+
+
+.footnotes
+	font-size: 0.8em
+	font-family: $qz-sans
+	color: $qz-gray-2
+	padding-left: 20px
+	padding-bottom: 20px
+
+.clear
+	clear:both
+
+@media only screen and (max-width $width-mobile)
+	.arrows path
+		stroke-width 1px
+
+	.labels text
+		font-family $qz-sans

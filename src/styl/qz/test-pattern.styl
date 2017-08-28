@@ -1,0 +1,47 @@
+#test-pattern
+	.circ
+		// border 2px solid $qz-body-black
+		border-radius 1000vw
+		box-sizing border-box
+		
+		&.cent
+			width 100%
+			height 100%
+			margin 0 auto
+			position absolute
+			border 4px solid $qz-body-black
+		
+		&.corner
+			width 25vw
+			height 25vw
+			position absolute
+			background-color alpha($qz-purp-2, 0.8)
+			
+			&.t
+				top 0
+			&.b
+				bottom 0
+			&.r
+				right 0
+			&.l
+				left 0
+				
+#interactive-content
+	&[data-frame="0"]
+		#test-pattern .circ.corner
+			background-color alpha($qz-gray-1, 0.8)
+			
+	&[data-frame="1"]
+		#test-pattern .circ.corner
+			background-color alpha($qz-purp-2, 0.8)
+			
+	&[data-frame="2"]
+		#test-pattern .circ.corner
+			background-color alpha($qz-blue-2, 0.8)
+			
+	&[data-frame="3"]
+		#test-pattern .circ.corner
+			background-color alpha($qz-green-3, 0.8)
+			
+
+		
